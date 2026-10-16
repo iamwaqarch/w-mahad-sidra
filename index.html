@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#240e0e">
+    <meta name="description" content="Mahad Aslam and Sidra Arif's Walima invitation.">
+    <title>Mahad &amp; Sidra — Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css?v=20261016-countdown-history">
+    <script defer src="data.js?v=20261016-countdown-barat"></script>
+    <script defer src="script.js?v=20261016-countdown-history"></script>
+  </head>
+  <body>
+    <main class="invitation-app" aria-label="Mahad Aslam and Sidra Arif wedding invitation">
+      <div class="invitation-stage">
+        <!-- The approved final JPEGs remain the visual source of truth. -->
+        <section id="opening" class="invitation-page is-active" data-title="Welcome" aria-label="Page 1 of 6: Welcome" aria-hidden="false" tabindex="-1">
+          <img src="01-entry.jpeg" width="860" height="1720" alt="Wedding invitation opening for Mahad Aslam and Sidra Arif.">
+          <div class="entry-date-retheme" aria-hidden="true">
+            <img src="01-entry-date-themed-repair.png" width="887" height="1774" alt="">
+          </div>
+          <div class="entry-button-removal" aria-hidden="true">
+            <img src="01-entry-enter-removed-repair.png" width="887" height="1774" alt="">
+          </div>
+        </section>
+
+        <section id="couple" class="invitation-page" data-title="Mahad &amp; Sidra" aria-label="Page 2 of 6: Mahad and Sidra" aria-hidden="true" tabindex="-1" inert>
+          <img src="02-hero-countdown.jpeg" width="860" height="1720" alt="Mahad Aslam and Sidra Arif with celebration countdown.">
+          <div class="countdown-number-repair" aria-hidden="true">
+            <img src="02-hero-countdown-live-repair.png" width="887" height="1774" alt="">
+          </div>
+          <output class="live-countdown" id="live-countdown" aria-live="polite" aria-label="Countdown to celebration">
+            <span data-countdown-value="days">00</span><span class="live-countdown__separator" aria-hidden="true">:</span><span data-countdown-value="hours">00</span><span class="live-countdown__separator" aria-hidden="true">:</span><span data-countdown-value="minutes">00</span><span class="live-countdown__separator" aria-hidden="true">:</span><span data-countdown-value="seconds">00</span>
+          </output>
+        </section>
+
+        <section id="walima" class="invitation-page" data-title="Walima" aria-label="Page 3 of 6: Walima" aria-hidden="true" tabindex="-1" inert>
+          <img src="08-walima.jpeg" width="860" height="1720" alt="Walima event details.">
+          <div class="walima-map-retheme" aria-hidden="true">
+            <img src="08-walima-maps-themed-repair.png" width="887" height="1774" alt="">
+          </div>
+          <a class="hotspot hotspot--walima-map" href="https://maps.app.goo.gl/2ndoWRFfk1gkv2Rq8" target="_blank" rel="noopener" aria-label="Open Walima venue in Google Maps"></a>
+        </section>
+
+        <section id="rsvp" class="invitation-page" data-title="RSVP" aria-label="Page 4 of 6: RSVP" aria-hidden="true" tabindex="-1" inert>
+          <img src="09-rsvp.jpeg" width="860" height="1720" alt="RSVP hosts.">
+        </section>
+
+        <section id="looking-forward" class="invitation-page" data-title="Looking Forward" aria-label="Page 5 of 6: Looking Forward" aria-hidden="true" tabindex="-1" inert>
+          <img src="10-looking-forward.jpeg" width="860" height="1720" alt="Looking forward contact details.">
+          <div class="share-button-removal" aria-hidden="true">
+            <img src="10-looking-forward-share-removed-repair.png" width="887" height="1774" alt="">
+          </div>
+          <a class="hotspot hotspot--contact-one" href="tel:+923206511552" aria-label="Call Mian Zahid at 0320 6511552"></a>
+          <a class="hotspot hotspot--contact-two" href="tel:+923144510014" aria-label="Call Abdullah Aslam at 0314 4510014"></a>
+        </section>
+
+        <section id="closing" class="invitation-page" data-title="With Love" aria-label="Page 6 of 6: With Love" aria-hidden="true" tabindex="-1" inert>
+          <img src="11-closing.jpeg" width="860" height="1720" alt="Wedding invitation closing.">
+          <div class="closing-credit-removal" aria-hidden="true">
+            <img src="11-closing-credit-removed-repair.png" width="887" height="1774" alt="">
+          </div>
+        </section>
+
+        <header class="site-chrome" aria-label="Invitation menu">
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open invitation menu" aria-controls="invitation-menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </header>
+
+        <nav class="page-controls is-first" aria-label="Invitation navigation">
+          <div class="navigation-slot navigation-slot--previous">
+            <button class="page-button back-button" id="back-button" type="button" aria-label="Go to the previous page" hidden>
+              <span id="back-button-label"></span>
+            </button>
+            <p class="designer-credit designer-credit--first" id="first-page-credit">designed with love by Waqar.</p>
+          </div>
+          <output class="page-progress" id="page-progress" aria-live="polite"><span>01</span><span aria-hidden="true">/</span><span>06</span></output>
+          <div class="navigation-slot navigation-slot--forward">
+            <button class="page-button next-button" id="next-button" type="button">
+              <span id="next-button-label">Enter Invitation</span>
+            </button>
+            <p class="designer-credit designer-credit--last" id="last-page-credit" hidden>designed with love by Waqar.</p>
+          </div>
+        </nav>
+      </div>
+
+      <nav class="section-menu" id="invitation-menu" aria-label="Invitation sections" aria-labelledby="menu-heading" aria-modal="true" role="dialog" hidden>
+        <div class="section-menu__panel">
+          <div class="section-menu__header">
+            <p class="section-menu__eyebrow">Mahad &amp; Sidra</p>
+            <h1 id="menu-heading">Explore the invitation</h1>
+            <button class="menu-close" id="menu-close" type="button" aria-label="Close invitation menu">×</button>
+          </div>
+          <div class="section-menu__links">
+            <button type="button" data-page-target="opening"><span>01</span>Welcome</button>
+            <button type="button" data-page-target="couple"><span>02</span>Mahad &amp; Sidra</button>
+            <button type="button" data-page-target="walima"><span>03</span>Walima</button>
+            <button type="button" data-page-target="rsvp"><span>04</span>RSVP</button>
+            <button type="button" data-page-target="looking-forward"><span>05</span>Looking Forward</button>
+            <button type="button" data-page-target="closing"><span>06</span>With Love</button>
+          </div>
+        </div>
+      </nav>
+      <p class="sr-only" id="page-status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
